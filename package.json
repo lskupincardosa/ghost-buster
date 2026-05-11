@@ -1,13 +1,14 @@
 {
-  "name": "ghost-buster",
+  "name": "flyingant-ghost-buster",
   "version": "1.0.0",
-  "description": "",
+  "description": "A CLI tool to hunt down and terminate rogue background processes.",
   "main": "index.js",
+  "bin": {
+    "ghost": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
-  "type": "commonjs"
+  "license": "MIT"
 }
