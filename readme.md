@@ -1,10 +1,13 @@
 # 👻 Ghost-Buster
 
-A blazing-fast Node.js CLI tool to hunt down and terminate rogue background processes holding your local ports hostage.
+[![npm version](https://img.shields.io/npm/v/flyingant-ghost-buster.svg)](https://www.npmjs.com/package/flyingant-ghost-buster)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A lightning-fast Node.js CLI tool to hunt down and terminate rogue background processes holding your local ports hostage.
 
 ## 🚀 The Problem
 
-Ever tried to start a local development server only to get `Error: Port 3000 is already in use`? Ghost-Buster automates the annoying process of finding the hidden Process ID (PID) and manually killing it, saving you from having to remember complex terminal commands.
+Ever tried to start a local development server only to get `Error: Port 3000 is already in use`? Ghost-Buster automates the annoying process of finding the hidden Process ID (PID) and manually killing it, saving you from having to remember complex terminal commands or digging through Activity Monitor.
 
 ## ✨ Features
 
@@ -12,34 +15,9 @@ Ever tried to start a local development server only to get `Error: Port 3000 is 
 - **Auto-Termination:** Parses the raw terminal output, extracts the exact PID, and runs a surgical `kill -9` command to free up your port immediately.
 - **Smart Detection:** Gracefully lets you know if a port is already free.
 
-## 🛠️ Usage
+## 📦 Installation
 
-Run the script and pass the port you want to clear as an argument:
+Install Ghost-Buster globally via npm to use the `ghost` command anywhere on your machine:
 
-\`\`\`bash
-node index.js <port-number>
-\`\`\`
-
-**Example:**
-
-\`\`\`bash
-node index.js 8000
-\`\`\`
-
-**Example Output:**
-
-\`\`\`text
-Hunting for ghosts on port 8000...
-👻 Found a ghost! Python is haunting port 8000 (PID: 37162)
-🔫 Busting ghost...
-✨ SUCCESS! The ghost has been busted. Port 8000 is free.
-\`\`\`
-
-## 🧠 What I Learned Building This
-
-- Interacting with the core OS via Node's `child_process.exec`.
-- Using Regex to parse and extract data from raw standard output (`stdout`).
-- System-level process management and port allocation.
-
----
-*Built as a personal developer utility.*
+```bash
+npm install -g flyingant-ghost-buster
