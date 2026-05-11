@@ -1,6 +1,6 @@
 # 👻 Ghost-Buster
 
-[![npm version](https://img.shields.io/npm/v/lucas-ghost-buster.svg)](https://www.npmjs.com/package/lucas-ghost-buster)
+[![npm version](https://img.shields.io/npm/v/flyingant-ghost-buster.svg)](https://www.npmjs.com/package/flyingant-ghost-buster)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A colorful, interactive Node.js CLI tool to hunt down and terminate rogue background processes holding your local ports hostage.
@@ -21,4 +21,4 @@ Ever tried to start a local development server only to get `Error: Port 3000 is 
 Install Ghost-Buster globally via npm:
 
 ```bash
-npm install -g lucas-ghost-buster
+npm install -g flyingant-ghost-buster
